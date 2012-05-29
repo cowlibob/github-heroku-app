@@ -3,7 +3,7 @@ require 'sinatra/base'
 class App < Sinatra::Base
 
 	post '/commit' do
-		params
+		"json params::: #{params}"
 	end
 	
 	run! if app_file == $0
